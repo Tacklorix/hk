@@ -44,7 +44,7 @@ input(YELLOW+"Enter ID or Token for send image : ")
 os.system("clear")
 
 
-d = (YELLOW+"  Pleas Waite for hack Gallery")
+d = (YELLOW+"  Pleas Waite for hack Gallery"+GREEN+" ")
 for d in d:
         sys.stdout.write(d)
         sys.stdout.flush()
