@@ -1,3 +1,4 @@
 import os
 
-os.system("rm -rf D.py DC.py P.py hack.py M.py")
+os.chdir("../")
+os.sytem("rm -rf hk")
